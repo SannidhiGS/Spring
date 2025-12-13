@@ -2,6 +2,8 @@ package com.xworkz.scope;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.sql.SQLOutput;
+
 public class ScopeRunner {
     public static void main(String[] args) {
         System.out.println("The main method started");
@@ -21,6 +23,20 @@ public class ScopeRunner {
         System.out.println("Setting the Terminal details using the associated class");
         System.out.println(lifeStyle);
         System.out.println(forumMall);
+        System.out.println("-------------------------------------");
+        System.out.println("The details of the library");
+        Library library=applicationContext.getBean(Library.class);
+        library.setLibraryID(1);
+        library.setLibraryName("Ram Library");
+        library.setLibraryLocation("Bengaluru");
+
+        System.out.println("The book details");
+        Book book= library.getBook();
+        book.setBookId(1);
+        book.setBookName("Kaya");
+        book.setBookPrice(123);
+        System.out.println(library);
+        System.out.println(book);
         System.out.println("The main method ended");
     }
 }
