@@ -9,4 +9,10 @@ public class Student {
     public void setValue(String value){
         this.value=value;
     }
+
+    public void setStudentName(String suresh) {
+    }
+
+    public void setStudentId(int i) {
+    }
 }

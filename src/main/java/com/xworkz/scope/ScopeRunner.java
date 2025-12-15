@@ -234,14 +234,73 @@ public class ScopeRunner {
         System.out.println(helmet);
         System.out.println("------------------------------------");
 
-//        PoliceStation policeStation = applicationContext.getBean(PoliceStation.class);
-//        policeStation.setStationId(1);
-//        policeStation.setLocation("Mangalore");
-//        Inspector inspector = policeStation.getInspector();
-//        inspector.setValue("Inspector Raghav");
-//        System.out.println(policeStation);
-//        System.out.println(inspector);
-//        System.out.println("------------------------------------");
+// Space & Astronaut
+        Space space = applicationContext.getBean(Space.class);
+        space.setSpaceId(1);
+        space.setGalaxyName("Milky Way");
+        System.out.println(space);
+        Astronaut astronaut = space.getAstronaut();
+        astronaut.setAstronautId(101);
+        astronaut.setAstronautName("Neil Armstrong");
+        System.out.println(astronaut);
+        System.out.println("------------------------------------");
+
+// Apartment & Flat
+        Apartment apartment = applicationContext.getBean(Apartment.class);
+        apartment.setApartmentId(1);
+        apartment.setApartmentName("Skyline Residency");
+        System.out.println(apartment);
+        Flat flat = apartment.getFlat();
+        flat.setFlatNo(101);
+        flat.setOwnerName("Ramesh");
+        System.out.println(flat);
+        System.out.println("------------------------------------");
+
+
+        Park park = applicationContext.getBean(Park.class);
+        park.setParkId(1);
+        park.setParkName("Cubbon Park");
+        System.out.println(park);
+        Tree tree = park.getTree();
+        tree.setTreeId(301);
+        tree.setTreeType("Neem");
+        System.out.println(tree);
+        System.out.println("------------------------------------");
+
+// College & Student
+        College college = applicationContext.getBean(College.class);
+        college.setCollegeId(1);
+        college.setCollegeName("Oxford College");
+        System.out.println(college);
+        Student student = college.getStudent();
+        student.setStudentId(201);
+        student.setStudentName("Suresh");
+        System.out.println(student);
+        System.out.println("------------------------------------");
+
+
+        Restaurant restaurant = applicationContext.getBean(Restaurant.class);
+        restaurant.setRestaurantId(1);
+        restaurant.setRestaurantName("Taj Restaurant");
+        System.out.println(restaurant);
+        Chef chef = restaurant.getChef();
+        chef.setChefId(301);
+        chef.setChefName("Rahul");
+        System.out.println(chef);
+        System.out.println("------------------------------------");
+
+
+        Museum museum = applicationContext.getBean(Museum.class);
+        museum.setMuseumId(1);
+        museum.setMuseumName("National Museum");
+        System.out.println(museum);
+        Exhibit exhibit = museum.getExhibit();
+        exhibit.setExhibitId(401);
+        exhibit.setExhibitName("Ancient Sculpture");
+        System.out.println(exhibit);
+        System.out.println("------------------------------------");
+
+
 
         Court court = applicationContext.getBean(Court.class);
         court.setName("High Court");
