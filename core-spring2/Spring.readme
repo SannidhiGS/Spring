@@ -1,0 +1,114 @@
+# Spring MVC + Hibernate Application
+
+A simple and well-structured **Spring MVC** application demonstrating core concepts of **ORM**, **JPA**, and **Hibernate**. This project follows a layered architecture and is ideal for learning backend development, interview preparation, and as a base for enterprise Java applications.
+
+---
+
+## 🚀 Features
+
+* Spring MVC (Model–View–Controller architecture)
+* Object Relational Mapping (ORM)
+* JPA with Hibernate implementation
+* CRUD operations
+* MySQL database integration
+* DTO–Entity mapping
+* Form handling & validation
+* Clean separation of layers
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Java
+* **Framework:** Spring MVC
+* **ORM:** Hibernate
+* **JPA Provider:** Hibernate
+* **Database:** MySQL
+* **Build Tool:** Maven
+* **Web Technologies:** HTML, CSS, Bootstrap (for views)
+* **Server:** Apache Tomcat
+
+---
+
+## 📁 Project Structure
+
+```
+src/main/java
+ └── com.example.app
+     ├── controller      # Handles HTTP requests
+     ├── service         # Business logic interfaces
+     ├── service/impl    # Service implementations
+     ├── dao / repository# Database operations
+     ├── dto             # Data Transfer Objects
+     ├── entity          # JPA entities
+     └── util            # Utility classes
+
+src/main/resources
+ ├── application.properties
+ ├── spring-servlet.xml
+ └── view               # JSP pages
+```
+
+---
+
+## ⚙️ Configuration
+
+Update your database configuration in `application.properties` or XML config:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/your_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+```
+
+---
+
+## ▶️ Running the Application
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   ```
+2. Import the project into IDE (Eclipse / IntelliJ) as **Maven Project**
+3. Configure Tomcat server
+4. Run the project on server
+5. Access the application at:
+
+   ```
+   http://localhost:8080/your-context-path
+   ```
+
+---
+
+## 🧩 Concepts Covered
+
+* MVC flow (Controller → Service → DAO)
+* Entity mapping using JPA annotations
+* Hibernate session & transaction management
+* CRUD operations using Hibernate/JPA
+* Database table mapping
+
+---
+
+## 📌 Best Practices Followed
+
+* Layered architecture
+* Loose coupling
+* Reusable DAO and service layers
+* Clean and readable code
+
+---
+
+## 👤 Author
+
+**Sannidhi G S**
+Java Developer (Spring MVC, Hibernate, JPA)
+
+---
+
+⭐ If you find this repository useful,
